@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bloc {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.bloc video {
+    position:absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+   font-size: 6rem;
+   position: absolute;
+   top: 1rem;
+   left: 5rem;
+   font-weight: bold;
+   color: rgb(100, 255, 100);
+}
+.button {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    background: rgb(100, 255, 100);
+    border-radius: 0 0 20px 20px;
+    font-size: 2rem;
+    box-shadow: 0 0 6px #eee;
+    cursor: pointer;
+    display: flex;
+    transition: 0.7s ease;
+}
+.text {
+    margin: 0;
+    font-weight: bold;
+    transform: translateX(14px);
+    transition: 0.4s ease;
+}
+.fas { 
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 0.4s ease;
+}
+
+.button:hover .fas {
+    opacity: 1;
+    transform: translateX(10px);
+}
+.button:hover .text {
+    transform: translateX(-10px);
+}
+.button:hover {
+    filter: brightness(140%);
+}
+.button:active {
+    transform: scale(0,96) translateX(-50%);
+}

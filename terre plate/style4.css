@@ -1,0 +1,139 @@
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url('image copy2/space-gf3e643b5f_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav .logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav .cart{
+    width: 40px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 40px;
+    text-align: right;
+    list-style-type: none;
+}
+
+ul li{
+    margin-right: 10px;
+    position: relative;
+}
+
+ul li a{
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+ul li a::after{
+    content: '';
+    background: #D76832;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transform: translate(-50%, -5px);
+    transition: 0.3s;
+}
+
+ul li a:hover::after{
+    width: 38%;
+}
+
+.site-container {
+    position: absolute;
+    top: 10%;
+    color: #fff;
+}
+
+p {
+    position: absolute;
+    float: right;
+    top: 350px;
+    left: 650px;
+    color: #ccc;
+}
+
+
+.site-container h1 {
+    font-size: 120px;
+    line-height: 120px;
+    margin-left: -10px;
+    font-family: 'Oswald', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url('image copy2/Sans titre-2.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 20s linear 0s infinite alternate;
+}
+
+@keyframes animate {
+    100%{
+        background-position: -500px 0;
+    }
+}
+
+.submenu {
+    display: none;
+}
+
+ul{
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+li:hover .submenu {
+    display: inline-block;
+    background: #222;
+    position: absolute;
+    top: 100%;
+}
+
+
+
+
+img {
+    position: absolute;
+    bottom: 10%;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 7%;
+    color: #ccc;
+}
